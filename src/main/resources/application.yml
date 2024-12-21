@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+
+  application:
+    name: hhplus-clean-architecture
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/hhplus-local?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone"
+    username: root
+    password: 1234
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        storage_engine: innodb
+        format_sql: true
+        use_sql_comments: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show_sql: true
