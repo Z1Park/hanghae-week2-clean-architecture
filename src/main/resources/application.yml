@@ -23,3 +23,4 @@ spring:
       ddl-auto: update
     open-in-view: false
     show_sql: true
+    generate-ddl: true
